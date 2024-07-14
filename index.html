@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <form action="#">
+            <h2 class="login">Login</h2>
+            <div class="input-field">
+                <input id="l-email" type="text" required>
+                <label>Enter your email</label>
+            </div>
+            <div class="input-field">
+                <input id="l-password" type="password" required>
+                <label>Enter your password</label>
+            </div>
+            <button class="btn1" onclick="forlogin()" type="submit">Log In</button>
+            <div class="register">
+                <p>Don't have an account? <a onclick="register()" href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="wrapper1" class="wrapper1">
+        <form action="#">
+            <h2 class="register">Register</h2>
+            <div class="input-field">
+                <input id="r-name" type="text" required>
+                <label>Enter your full name</label>
+            </div>
+            <div class="input-field">
+                <input id="r-email" type="email" required>
+                <label>Enter your email</label>
+            </div>
+            <div class="input-field">
+                <input id="r-password" type="password" required>
+                <label>Enter your password</label>
+            </div>
+            <div class="input-field">
+                <input id="c-password" type="password" required>
+                <label>Confirm your password</label>
+            </div>
+            <button onclick="forRegister()" type="submit">Register</button>
+            <div class="register">
+                <p>Already have an account? <a onclick="login()" href="#">Log In</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="bootstrap.js"></script>
+
+</body>
+
+</html>
